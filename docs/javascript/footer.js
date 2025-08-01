@@ -1,6 +1,6 @@
 const footer = document.getElementById('footer')
 footer.innerHTML = `
-    <footer class="bg-[#1e5b5a] md:py-20 py-10 p-5">
+    <footer class="bg-[#1e5b5a] md:pt-20 pt-10 p-5">
 
         <div class="md:max-w-[80%] w-full mx-auto">
 

@@ -60,15 +60,15 @@
         <!-- Content -->
         <div
             class="relative z-20 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center md:min-h-[calc(100vh-6rem)] min-h-[calc(100vh-5rem)] flex items-center justify-center flex-col">
-            <h1 data-aos="fade-up" data-aos-delay="100"
+            <h1 data-aos="fade-up" data-aos-delay="200"
                 class="max-w-5xl textShadow mx-auto text-zinc-200 text-center font-bold text-4xl md:text-7xl uppercase leading-tight md:mb-8 mb-5">
                 No estás solo. Podemos ayudarte
             </h1>
-            <p data-aos="fade-up" data-aos-delay="200"
+            <p data-aos="fade-up" data-aos-delay="400"
                 class="max-w-3xl capitalize textShadow mx-auto text-center text-base font-normal leading-7 text-zinc-200 text-lg tracking-wider md:mb-9 mb-7">
                 Adicciones, depresión, ansiedad, vacío emocional — aquí comienza tu recuperación.
             </p>
-            <div data-aos="fade-up" data-aos-delay="300">
+            <div data-aos="fade-up" data-aos-delay="600">
                 <a href="/contact.html"
                     class="w-full md:w-auto tracking-wider inline-flex items-center justify-center py-3.5 md:py-4 px-7 md:px-16 text-base font-medium text-center text-white rounded-lg bg-[#1e5b5a] shadow-xs hover:opacity-70 transition-all duration-500">
                     Contáctanos
@@ -84,7 +84,7 @@
             <h2 data-aos="fade-up" class="lg:text-5xl capitalize text-4xl font-semibold text-[#1e5b5a]">
                 ¿Quiénes Somos?
             </h2>
-            <p class="mt-4 text-zinc-600 md:text-lg">
+            <p data-aos="fade-up" class="mt-4 text-zinc-600 md:text-lg">
                 En Ancora, somos una clínica de rehabilitación especializada en el tratamiento de adicciones y problemas
                 emocionales en hombres. Ubicados en Monclova, Coahuila, México, ofrecemos procesos residenciales
                 transformadores de 6 meses de duración.
@@ -94,28 +94,27 @@
                 especializados. Juntos, guiamos a nuestros pacientes a través de un proceso integral que combina:
             </p>
             <div class="space-y-2 md:mt-5 mt-5">
-                <div class="flex items-center gap-5 text-lg bg-green-50 p-4 rounded-xl">
+                <div data-aos="fade-up" class="flex items-center gap-5 text-lg bg-green-50 p-4 rounded-xl">
                     <i class="fas fa-users text-[#1e5b5a] text-2xl"></i>
                     <span>El modelo de 12 pasos</span>
                 </div>
-                <div class="flex items-center gap-5 text-lg bg-green-50 p-4 rounded-xl">
+                <div data-aos="fade-up" class="flex items-center gap-5 text-lg bg-green-50 p-4 rounded-xl">
                     <i class="fas fa-heartbeat text-[#1e5b5a] text-2xl"></i>
                     <span>Atención psicológica</span>
                 </div>
-                <div class="flex items-center gap-5 text-lg bg-green-50 p-4 rounded-xl">
+                <div data-aos="fade-up" class="flex items-center gap-5 text-lg bg-green-50 p-4 rounded-xl">
                     <i class="fas fa-praying-hands text-[#1e5b5a] text-2xl"></i>
                     <span>Apoyo espiritual</span>
                 </div>
-                <div class="flex items-center gap-5 text-lg bg-green-50 p-4 rounded-xl">
+                <div data-aos="fade-up" class="flex items-center gap-5 text-lg bg-green-50 p-4 rounded-xl">
                     <i class="fas fa-chalkboard-teacher text-[#1e5b5a] text-2xl"></i>
                     <span>Formación disciplinaria</span>
                 </div>
             </div>
 
         </div>
-        <div class="md:w-1/2 w-full">
-            <img src="/docs/assets/images/about.jpeg"
-                class="w-full rounded-lg" alt="">
+        <div data-aos="zoom-in" class="md:w-1/2 w-full">
+            <img src="/docs/assets/images/about.jpeg" class="w-full rounded-lg" alt="">
         </div>
     </section>
 
@@ -214,14 +213,164 @@
         </div>
     </section>
 
+    <section class="w-full p-5 max-w-4xl mx-auto md:mt-16 mt-10">
+        <h2 data-aos="fade-up" class="text-[#1e5b5a] font-semibold md:text-4xl text-center text-2xl">Preguntas
+            Frecuentes</h2>
+
+        <p data-aos="fade-up" class="text-zinc-600 mt-2 text-center md:mt-4 md:text-lg">Todos los procesos son <b>totalmente confidenciales y anónimos</b>. Tu información no será compartida con nadie
+            sin tu consentimiento.</p>
+
+        <div class="md:mt-14 mt-10">
+            <div class="border-b border-zinc-300 pb-6" data-aos="fade-up">
+                <button onclick="toggleAccordion(1)" class="w-full cursor-pointer flex justify-between items-center">
+                    <p class="text-lg text-start font-medium">¿Solo atienden adicciones?</p>
+                    <i id="icon-1" class="fa-solid fa-angle-down text-gray-600 transition-transform duration-300"></i>
+                </button>
+                <div id="content-1" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <p class="pt-3 text-zinc-600">
+                        No. También trabajamos con casos de *depresión, ansiedad, crisis emocionales, ingobernabilidad
+                        personal* y pérdida de sentido. Ancora es un espacio para sanar profundamente, no solo dejar de
+                        consumir.
+                    </p>
+                </div>
+            </div>
+            <div class="mt-5 border-b border-zinc-300 pb-6" data-aos="fade-up">
+                <button onclick="toggleAccordion(2)" class="w-full cursor-pointer flex justify-between items-center">
+                    <p class="text-start text-lg font-medium">¿Puedo traer a alguien a la fuerza?</p>
+                    <i id="icon-2" class="fa-solid fa-angle-down text-gray-600 transition-transform duration-300"></i>
+                </button>
+                <div id="content-2" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <p class="pt-3 text-zinc-600">
+                        Sí. En México, existen procesos legales donde la familia puede solicitar el ingreso no
+                        voluntario. Nosotros manejamos estos casos con profesionalismo, respeto y protocolos seguros.
+                    </p>
+                </div>
+            </div>
+            <div class="mt-5 border-b border-zinc-300 pb-6" data-aos="fade-up">
+                <button onclick="toggleAccordion(3)" class="w-full cursor-pointer flex justify-between items-center">
+                    <p class="text-start text-lg font-medium">¿Cuál es la duración del proceso?</p>
+                    <i id="icon-3" class="fa-solid fa-angle-down text-gray-600 transition-transform duration-300"></i>
+                </button>
+                <div id="content-3" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <p class="pt-3 text-zinc-600">
+                        El proceso residencial tiene una duración de *6 meses*, dividido en etapas: desintoxicación,
+                        adaptación, integración terapéutica y acompañamiento familiar.
+                    </p>
+                </div>
+            </div>
+            <div class="mt-5 border-b border-zinc-300 pb-6" data-aos="fade-up">
+                <button onclick="toggleAccordion(4)" class="w-full cursor-pointer flex justify-between items-center">
+                    <p class="text-start text-lg font-medium">¿Puedo visitar a mi hijo o familiar?</p>
+                    <i id="icon-4" class="fa-solid fa-angle-down text-gray-600 transition-transform duration-300"></i>
+                </button>
+                <div id="content-4" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <p class="pt-3 text-zinc-600">
+                        Sí. Las visitas presenciales inician a partir del *tercer mes, cada 15 días*. Antes de eso,
+                        puedes **verlo por cámaras una vez a la semana**, o acudir en horario de oficina si deseas
+                        observar su avance.
+                    </p>
+                </div>
+            </div>
+            <div class="mt-5 border-b border-zinc-300 pb-6" data-aos="fade-up">
+                <button onclick="toggleAccordion(5)" class="w-full cursor-pointer flex justify-between items-center">
+                    <p class="text-start text-lg font-medium">¿Puedo llevarle cosas?</p>
+                    <i id="icon-5" class="fa-solid fa-angle-down text-gray-600 transition-transform duration-300"></i>
+                </button>
+                <div id="content-5" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <p class="pt-3 text-zinc-600">
+                        Sí. Entre semana puedes llevarle *snacks, bebidas o artículos personales*, siempre cuidando que
+                        sea dentro de un entorno saludable. Este contacto ayuda a mantener el vínculo familiar activo.
+                    </p>
+                </div>
+            </div>
+            <div class="mt-5 border-b border-zinc-300 pb-6" data-aos="fade-up">
+                <button onclick="toggleAccordion(6)" class="w-full cursor-pointer flex justify-between items-center">
+                    <p class="text-start text-lg font-medium">¿Cómo sé si está bien atendido?</p>
+                    <i id="icon-6" class="fa-solid fa-angle-down text-gray-600 transition-transform duration-300"></i>
+                </button>
+                <div id="content-6" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <p class="pt-3 text-zinc-600">
+                        Desde su ingreso, el paciente es valorado médicamente y acompañado en cada etapa por psicólogos,
+                        terapeutas y personal capacitado. *Mantenemos comunicación continua con la familia*,
+                        compartiendo avances y cualquier situación relevante.
+                    </p>
+                </div>
+            </div>
+            <div class="mt-5 border-b border-zinc-300 pb-6" data-aos="fade-up">
+                <button onclick="toggleAccordion(7)" class="w-full cursor-pointer flex justify-between items-center">
+                    <p class="text-start text-lg font-medium">¿Atienden a mujeres?</p>
+                    <i id="icon-7" class="fa-solid fa-angle-down text-gray-600 transition-transform duration-300"></i>
+                </button>
+                <div id="content-7" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <p class="pt-3 text-zinc-600">
+                        No. Ancora es una clínica especializada exclusivamente en hombres.
+                    </p>
+                </div>
+            </div>
+            <div class="mt-5 border-b border-zinc-300 pb-6" data-aos="fade-up">
+                <button onclick="toggleAccordion(8)" class="w-full cursor-pointer flex justify-between items-center">
+                    <p class="text-start text-lg font-medium">¿Qué tipo de acompañamiento ofrecen?</p>
+                    <i id="icon-8" class="fa-solid fa-angle-down text-gray-600 transition-transform duration-300"></i>
+                </button>
+                <div id="content-8" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <p class="pt-3 text-zinc-600">
+                        Contamos con *terapeutas que han vivido la adicción, psicólogos clínicos y un psiquiatra
+                        disponible en caso necesario. Además, brindamos **guía espiritual (no religiosa)*, formación
+                        disciplinaria y apoyo emocional integral.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="mt-5 border-b border-zinc-300 pb-6" data-aos="fade-up">
+            <button onclick="toggleAccordion(8)" class="w-full cursor-pointer flex justify-between items-center">
+                <p class="text-start text-lg font-medium">¿Esto le puede pasar a mi hijo aunque no esté tan mal?</p>
+                <i id="icon-8" class="fa-solid fa-angle-down text-gray-600 transition-transform duration-300"></i>
+            </button>
+            <div id="content-8" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                <p class="pt-3 text-zinc-600">
+                    Sí. La adicción y los problemas emocionales no siempre se notan de inmediato. Si observas cambios en
+                    su carácter, aislamiento, tristeza, agresividad o pérdida de control, *actuar a tiempo puede cambiar
+                    su vida*.
+                </p>
+            </div>
+        </div>
+        <div class="mt-5 border-b border-zinc-300 pb-6" data-aos="fade-up">
+            <button onclick="toggleAccordion(9)" class="w-full cursor-pointer flex justify-between items-center">
+                <p class="text-start text-lg font-medium">¿En Ancora maltratan o golpean a los internos?</p>
+                <i id="icon-9" class="fa-solid fa-angle-down text-gray-600 transition-transform duration-300"></i>
+            </button>
+            <div id="content-9" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                <p class="pt-3 text-zinc-600">
+                    No. En Ancora estamos completamente *en contra de la violencia, el abuso o la humillación*.
+                    Trabajamos con amor, respeto y firmeza, a través de herramientas terapéuticas, ejercicio,
+                    actividades sanadoras y disciplina emocional positiva.
+                </p>
+            </div>
+        </div>
+        <div class="mt-5 border-b border-zinc-300 pb-6" data-aos="fade-up">
+            <button onclick="toggleAccordion(10)" class="w-full cursor-pointer flex justify-between items-center">
+                <p class="text-start text-lg font-medium">¿Qué tipo de actividades realizan durante el día?</p>
+                <i id="icon-10" class="fa-solid fa-angle-down text-gray-600 transition-transform duration-300"></i>
+            </button>
+            <div id="content-10" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                <p class="pt-3 text-zinc-600">
+                    Los pacientes siguen una rutina organizada con *terapia emocional, ejercicios físicos, limpieza
+                    personal, momentos de reflexión, oración y actividades comunitarias*. Todo está pensado para
+                    fomentar el orden, la conciencia y el crecimiento personal.
+                </p>
+            </div>
+        </div>
+
+
+    </section>
+
     <section class="md:max-w-[80%] md:mb-20 mb-10 p-4 w-full mx-auto lg:mt-24 mt-12">
         <div class="flex md:gap-20 gap-8 flex-col lg:flex-row">
             <div class="lg:max-w-[45%] w-full">
 
                 <h2 data-aos="fade-up" class="lg:text-[40px] text-3xl lg:max-w-sm font-semibold text-zinc-700">
                     Contáctanos</h2>
-                <p data-aos="fade-up" class="text-[#1D2939] text-lg mt-2">Si no te amas ahora mismo, caminaremos contigo
-                    hasta que puedas hacerlo.</p>
+                <p data-aos="fade-up" class="text-[#1D2939] text-lg mt-2">Tu información está protegida.</p>
 
                 <div class="grid md:grid-cols-2 grid-cols-1 gap-2 md:mt-5 mt-8">
                     <div class="md:col-span-2" data-aos="fade-up">
@@ -270,6 +419,7 @@
                     <input type="text" placeholder="Mensaje*" class="w-full border-0 placeholder:text-[#475467] py-4"
                         id="message">
                 </div>
+                <p class="text-[#475467] text-sm font-normal md:col-span-2">En Ancora cuidamos tu privacidad y manejamos todos los mensajes con total discreción y respeto.</p>
                 <div data-aos="fade-up" class="flex">
                     <button type="submit"
                         class="w-full text-nowrap md:w-auto inline-flex items-center justify-center py-3.5 px-12 cursor-pointer text-base font-medium text-center text-white rounded-full bg-[#1e5b5a] Montserrat shadow-xs hover:opacity-70 transition-all duration-500">
@@ -288,6 +438,7 @@
             </div>
         </div>
     </section>
+
     <div class="" id="footer"></div>
 
     <script src="https://unpkg.com/lenis@1.3.1/dist/lenis.min.js"></script>
@@ -295,7 +446,20 @@
     <script src="./docs/javascript/global.js"></script>
     <script src="./docs/javascript/navbar.js"></script>
     <script src="./docs/javascript/footer.js"></script>
+    <script>
+        function toggleAccordion(index) {
+            const content = document.getElementById(`content-${index}`);
+            const icon = document.getElementById(`icon-${index}`);
 
+            if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+                content.style.maxHeight = '0';
+                icon.classList.remove('rotate-180')
+            } else {
+                content.style.maxHeight = content.scrollHeight + 'px';
+                icon.classList.add('rotate-180')
+            }
+        }
+    </script>
 </body>
 
 </html>
