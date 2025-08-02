@@ -57,3 +57,24 @@ input:user-invalid {
     background: linear-gradient(rgba(0, 0, 0, 0.644), rgba(0, 0, 0, 0.667)), url(https://images.pexels.com/photos/955656/pexels-photo-955656.jpeg?_gl=1*g55j9i*_ga*MTU1MTYyMjc1NC4xNzUyMDQ1MzM5*_ga_8JE65Q40S6*czE3NTQwNjAwMzYkbzEwJGcxJHQxNzU0MDYyNTc0JGoyMyRsMCRoMA..) no-repeat center center;
     background-size: cover;
 }
+
+
+/* ------ */
+.scrolling-text {
+    animation: scroll 20s linear infinite;
+}
+
+.text-content h2 {
+    margin-right: 50px;
+    /* Adjust space between texts */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
