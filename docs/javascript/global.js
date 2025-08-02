@@ -3,6 +3,7 @@ const lenis = new Lenis({
 });
 
 const bottomToTopScroll = document.getElementById("bottomToTopScroll");
+const whatsapp = document.getElementById("whatsapp");
 
 bottomToTopScroll.innerHTML = `
 <div
@@ -13,10 +14,25 @@ document.addEventListener("DOMContentLoaded", function () {
     const scrollToTopBtn = document.querySelector(".bottomToTop");
 
     window.addEventListener("scroll", function () {
-        if (window.scrollY > 200) {
+        if (window.scrollY > 400) {
             scrollToTopBtn.style.display = "flex";
         } else {
             scrollToTopBtn.style.display = "none";
+        }
+    });
+
+    scrollToTopBtn.addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 100) {
+            whatsapp.style.display = "flex";
+        } else {
+            whatsapp.style.display = "none";
         }
     });
 
