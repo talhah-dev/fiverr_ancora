@@ -5,4 +5,4 @@ User-agent: *
 Disallow: 
 
 # Provide the location of your sitemap (if you have one)
-Sitemap: https://www.yourwebsite.com/sitemap.xml
+Sitemap: https://www.ancoras.com/sitemap.xml
