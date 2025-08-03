@@ -48,19 +48,31 @@
     <div id="navbar"></div>
 
 
-    <section class=" contactBanner min-h-90 mt-5">
+    <section class="contactBanner relative min-h-90 mt-5 overflow-hidden">
+        <!-- Video Background -->
+        <video class="absolute top-0 left-0 w-full h-full object-cover z-0" autoplay muted loop playsinline>
+            <source src="https://videos.pexels.com/video-files/4253277/4253277-uhd_2560_1440_25fps.mp4"
+                type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <!-- Overlay -->
+        <div class="absolute top-0 left-0 w-full h-full bg-black opacity-60 z-1"></div>
+
+        <!-- Content -->
         <div
-            class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative text-center min-h-90 flex items-center justify-center flex-col">
+            class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10 text-center min-h-90 flex items-center justify-center flex-col">
             <h2 data-aos="fade-up" data-aos-delay="100"
-                class="max-w-5xl mx-auto text-white text-center font-semibold text-4xl text-gray-900 mb-5 md:text-[60px]">
+                class="max-w-5xl mx-auto text-white font-semibold text-4xl md:text-[60px] mb-5">
                 Contáctanos
             </h2>
             <p data-aos="fade-up" data-aos-delay="200"
-                class="max-w-3xl mx-auto text-white text-center text-base font-normal leading-7 text-gray-900 tracking-wider">
+                class="max-w-3xl mx-auto text-white text-base font-normal leading-7 tracking-wider">
                 Todos los procesos son totalmente confidenciales y anónimos. Tu información no será compartida con nadie
-                sin tu consentimiento.</p>
+                sin tu consentimiento.
+            </p>
         </div>
     </section>
+
 
     <section class="md:max-w-[80%] md:mb-20 mb-10 p-4 w-full mx-auto lg:mt-24 mt-12">
         <div class="flex md:gap-20 gap-8 flex-col lg:flex-row">
@@ -94,7 +106,7 @@
                             class="w-full flex md:items-center transition-all duration-500 gap-3 md:p-4 p-3 bg-zinc-100 rounded-2xl ">
                             <div class="">
                                 <h3 class="Montserrat font-semibold text-lg text-[#101828]">Address</h3>
-                                <p class="text-[#1e5b5a] font-semibold">Calle Morelos #1001   Colonia:La loma CP:25770</p>
+                                <p class="text-[#1e5b5a] font-semibold">Calle Morelos #1001 Colonia:La loma CP:25770</p>
                             </div>
                         </a>
                     </div>
@@ -142,7 +154,7 @@
 
     <section class="max-w-7xl flex items-center justify-center mx-auto  md:mt-20 px-5">
         <iframe data-aos="fade-up"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113852.76886382492!2d-101.5094364499295!3d26.906699475494527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x868a2433bc5f6089%3A0xbd80c4a7d6062dc4!2sMonclova%2C%20Coahuila%2C%20Mexico!5e0!3m2!1sen!2s!4v1754060684231!5m2!1sen!2s"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.4951702280523!2d-101.4188346!3d26.8877758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x868bd20e596f5a1f%3A0x5ff1bd46c997aa1e!2sJos%C3%A9%20Mar%C3%ADa%20Morelos%201106%2C%20La%20Loma%2C%2025770%20Monclova%2C%20Coah.%2C%20Mexico!5e0!3m2!1sen!2s!4v1754182805548!5m2!1sen!2s"
             class="w-full h-96 md:h-[30rem] rounded-2xl" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
@@ -153,7 +165,7 @@
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script src="./docs/javascript/global.js"></script>
     <script src="./docs/javascript/navbar.js"></script>
-    <script src="./docs/javascript/footer.js"></script> 
+    <script src="./docs/javascript/footer.js"></script>
 
 </body>
 
